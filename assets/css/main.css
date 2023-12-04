@@ -2283,7 +2283,7 @@ input, select, textarea {
 
 			.icon.alt:before {
 				display: block;
-				font-size: 1.25em;
+				font-size: 1em;
 				width: 2em;
 				height: 2em;
 				text-align: center;
@@ -2370,7 +2370,7 @@ input, select, textarea {
 	}
 
 		.image img {
-			border-radius: 8px;
+			border-radius: 4em;
 			display: block;
 		}
 
@@ -2674,7 +2674,7 @@ input, select, textarea {
 			}
 
 	footer.major {
-		margin-top: 3em;
+		padding-bottom: 5em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2804,10 +2804,10 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
+		-moz-justify-content: left;
+		-webkit-justify-content: left;
+		-ms-justify-content: left;
+		justify-content: left;
 		width: calc(100% + 2em);
 		margin: 0 0 1em -2em;
 		padding: 0;
@@ -2836,47 +2836,57 @@ input, select, textarea {
 		}
 
 		.features .javaid {
-			margin: 0 0 0.7em 0;
+			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
 			padding: 0 0.5em 0.25em 0.5em;
 			border-radius: 0.25em;
-			background-color: #FF6D00;
+			background-color: #F57C00;
+			font-size: 90%;
+		}
+
+		.features .fxmlid {
+			margin: 0 0.2em 0.7em 0;
+			display: inline-block;
+			padding: 0 0.5em 0.25em 0.5em;
+			border-radius: 0.25em;
+			background-color: #FFA000;
 			font-size: 90%;
 		}
 
 		.features .pythonid {
-			margin: 0 0 0.7em 0;
+			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
 			padding: 0 0.5em 0.25em 0.5em;
 			border-radius: 0.25em;
-			background-color: #AA00FF;
+			background-color: #7B1FA2;
+			color: #d6d6d6;
 			font-size: 90%;
 		}
 
 		.features .cplusplusid {
-			margin: 0 0 0.7em 0;
+			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
 			padding: 0 0.5em 0.25em 0.5em;
 			border-radius: 0.25em;
-			background-color: #2962FF;
+			background-color: #1976D2;
 			font-size: 90%;
 		}
 
 		.features .sqlid {
-			margin: 0 0 0.7em 0;
+			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
 			padding: 0 0.5em 0.25em 0.5em;
 			border-radius: 0.25em;
-			background-color: #00C853;
+			background-color: #388E3C;
 			font-size: 90%;
 		}
 
 		.features .aimlid {
-			margin: 0 0 0.7em 0;
+			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
 			padding: 0 0.5em 0.25em 0.5em;
 			border-radius: 0.25em;
-			background-color: #D50000;
+			background-color: #D32F2F;
 			font-size: 90%;
 		}
 
@@ -3073,10 +3083,14 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				/* border-radius: 100%; */
-				width: 14em;
+				width: 15em;
 			}
 
 		@media screen and (max-width: 980px) {
+
+			header.major h2 {
+				text-align: center;
+			}
 
 			.spotlight {
 				-moz-flex-direction: column;
@@ -3308,7 +3322,7 @@ input, select, textarea {
 
 	#nav, #main {
 		opacity: 0;
-		animation: fadein 2s forwards 2.5s;
+		animation: fadein 2s forwards 3s;
 	}
 
 	@keyframes fadein {
@@ -3336,7 +3350,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		margin: 2em 0 0 0;
-		animation: pullup 2s forwards 2.5s;
+		animation: pullup 2s forwards 3s;
 	}
 
 	@keyframes pullup {
@@ -3645,12 +3659,14 @@ input, select, textarea {
 			}
 
 		#main .icon.alt {
-			border-color: #dddddd;
-			color: #636363;
+			font-size: 1.3em;
+			border-color: #d6d6d6;
+			color: #d6d6d6;
 		}
 
 			#main .icon.alt:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: transparent;
+				color: #ffffff;
 			}
 
 			#main .icon.alt:active {
@@ -3699,6 +3715,11 @@ input, select, textarea {
 
 		#main .spotlight .image {
 			border-color: #dddddd;
+		}
+
+		#main .spotlight .major .flag {
+			font-size: 1.75em;
+			margin: 0;
 		}
 
 		#main > .main {
@@ -3811,9 +3832,9 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		/* padding: 5em 5em 3em 5em ; */
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0 0 4em 0;
 	}
 
 		#footer > * {
