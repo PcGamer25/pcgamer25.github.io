@@ -2283,7 +2283,7 @@ input, select, textarea {
 
 			.icon.alt:before {
 				display: block;
-				font-size: 1em;
+				font-size: 1.025em;
 				width: 2em;
 				height: 2em;
 				text-align: center;
@@ -2497,7 +2497,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: inline-flex;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -2587,9 +2587,9 @@ input, select, textarea {
 					width: 100%;
 				}
 
-					ul.actions:not(.fixed) li > * {
+					/* ul.actions:not(.fixed) li > * {
 						width: 100%;
-					}
+					} */
 
 					ul.actions:not(.fixed) li:first-child {
 						padding-top: 0;
@@ -2819,20 +2819,24 @@ input, select, textarea {
 			margin-left: 2em;
 			margin-top: 3em;
 			/* padding: 1.5em; */
-			background-color: #252528;
-			border-radius: 0.25em;
+			/* background-color: #252528; */
+			
 		}
 
 		.features li img {
 			width: 100%;
 			object-fit: contain;
-			border-top-right-radius: 0.25em;
 			border-top-left-radius: 0.25em;
+			border-top-right-radius: 0.25em;
+			vertical-align: bottom;
 		}
 
 		.features .content {
-			padding: 0.5em 1.5em 0 1.5em;
+			padding: 1em 1.5em 0 1.5em;
 			text-align: left;
+			background-color: #252528;
+			border-bottom-left-radius: 0.25em;
+			border-bottom-right-radius: 0.25em;
 		}
 
 		.features .javaid {
@@ -3926,3 +3930,16 @@ input, select, textarea {
 			}
 
 		} */
+
+	/* .static-overlay-container {
+		position: relative;
+		overflow: hidden;
+		z-index: 10000;
+	}
+
+	.static-overlay {
+		position: absolute;
+		inset: -200%;
+		background-image: url("images\noise2000.png");
+		opacity: 100%;
+	} */
