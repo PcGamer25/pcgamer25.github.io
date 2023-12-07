@@ -2877,7 +2877,7 @@ input, select, textarea {
 		.features .javaid {
 			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
-			padding: 0 0.5em 0 0.5em;
+			padding: 0 0.5em 0.125em 0.5em;
 			border-radius: 0.25em;
 			background-color: #F57C00;
 			font-size: 90%;
@@ -2886,7 +2886,7 @@ input, select, textarea {
 		.features .fxmlid {
 			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
-			padding: 0 0.5em 0 0.5em;
+			padding: 0 0.5em 0.125em 0.5em;
 			border-radius: 0.25em;
 			background-color: #FFA000;
 			font-size: 90%;
@@ -2895,7 +2895,7 @@ input, select, textarea {
 		.features .pythonid {
 			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
-			padding: 0 0.5em 0 0.5em;
+			padding: 0 0.5em 0.125em 0.5em;
 			border-radius: 0.25em;
 			background-color: #7B1FA2;
 			color: #d6d6d6;
@@ -2905,7 +2905,7 @@ input, select, textarea {
 		.features .cplusplusid {
 			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
-			padding: 0 0.5em 0 0.5em;
+			padding: 0 0.5em 0.125em 0.5em;
 			border-radius: 0.25em;
 			background-color: #1976D2;
 			font-size: 90%;
@@ -2914,7 +2914,7 @@ input, select, textarea {
 		.features .sqlid {
 			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
-			padding: 0 0.5em 0 0.5em;
+			padding: 0 0.5em 0.125em 0.5em;
 			border-radius: 0.25em;
 			background-color: #388E3C;
 			font-size: 90%;
@@ -2923,7 +2923,7 @@ input, select, textarea {
 		.features .aimlid {
 			margin: 0 0.2em 0.7em 0;
 			display: inline-block;
-			padding: 0 0.5em 0 0.5em;
+			padding: 0 0.5em 0.125em 0.5em;
 			border-radius: 0.25em;
 			background-color: #D32F2F;
 			font-size: 90%;
