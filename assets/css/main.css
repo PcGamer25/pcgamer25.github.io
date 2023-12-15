@@ -3220,26 +3220,34 @@ input, select, textarea {
 				white-space: nowrap;
 				overflow: hidden;
 				animation:
-					inicursor .5s step-end 4 alternate,
-					typing 2s 1.75s steps(11),
-					cursor .5s 4s step-end infinite alternate;
+					delay 1s,
+					inicursor .5s step-end 4 alternate 1s,
+					typing 2s 2.75s steps(11),
+					cursor .5s 5s step-end infinite alternate;
+			}
+
+			/*Initial delay */
+			@keyframes delay {
+				from { border-color: transparent; }
+				to { border-color: transparent; }
+				from { width: 0; }
+				to { width: 0; }
 			}
 
 			/*Initial cursor blinking */
 			@keyframes inicursor {
-				50% { border-color: transparent;}
-				from { width: 0 }
-				/* to { width: 0 } */
+				50% { border-color: transparent; }
+				from { width: 0; }
 			}
 
 			/* Cursor blinking */
 			@keyframes cursor {
-				50% { border-color: transparent;}
+				50% { border-color: transparent; }
 			}
 
 			/* Typing effect */
 			@keyframes typing {
-				from { width: 0 }
+				from { width: 0; }
 			}
 
 			/* #header.alt > * {
@@ -3361,7 +3369,7 @@ input, select, textarea {
 
 	#main {
 		opacity: 0;
-		animation: fadein 2s forwards 3s;
+		animation: fadein 1s forwards;
 	}
 
 	@keyframes fadein {
@@ -3390,8 +3398,8 @@ input, select, textarea {
 		text-align: center;
 		-webkit-backdrop-filter: blur(24px);
 		backdrop-filter: blur(24px);
-		margin: 2em 0 0 0;
-		animation: pullup-fadein 2s forwards ease-out 3s;
+		margin: 1em 0 0 0;
+		animation: pullup-fadein 1s forwards ease-out;
 	}
 
 	@keyframes pullup-fadein {
@@ -3953,8 +3961,8 @@ input, select, textarea {
 	#wrapper {
 		/* margin: 0 auto; */
 		text-align: center;
-		position: fixed;
-		animation: noscroll forwards 0s 5s;
+		position: static;
+		/* animation: noscroll forwards 0s 5s; */
 	}
 
 	@keyframes noscroll {
