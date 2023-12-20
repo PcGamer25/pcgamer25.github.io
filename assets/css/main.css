@@ -3108,6 +3108,10 @@ input, select, textarea {
 			flex: 1;
 		}
 
+		.spotlight p b {
+			font-weight: 600;
+		}
+
 			.spotlight .content > :last-child {
 				margin-bottom: 0;
 			}
